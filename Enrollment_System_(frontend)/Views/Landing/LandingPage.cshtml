@@ -5,19 +5,19 @@
     <div class="d-flex gap-2">
         <div class="align-content-center">
             <img src="~/images/logo.svg" class="rounded p-2" style="background-color:#066B99; width:50px; height:40px;" />
-        </div>
-        <div class="align-items-center">
-            <h5>State University</h5>
-            <small style="color:gray;">State University</small>
+        </div> 
+        <div class="align-items-center"> 
+            <h5>State University</h5> 
+            <small style="color:gray;">State University</small> 
         </div>
     </div>
-    <div class="d-flex gap-5 align-items-center">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#Programs" class="nav-link">Programs</a>
+    <div class="d-flex gap-5 align-items-center"> 
+        <a href="#" class="nav-link">Home</a> 
+        <a href="#Programs" class="nav-link">Programs</a> 
     </div>
     <div class="d-flex align-items-center gap-2 ms-auto">
-        <button class="btn text-white" style="background-color:#066B99; width:150px;">Apply Now</button>
-        <button class="btn text-white" style="background-color:#066B99; width:150px;">Login</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#ApplyNowModal" class="btn text-white" style="background-color:#066B99; width:150px;">Apply Now</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#LoginModal" class="btn text-white" style="background-color:#066B99; width:150px;">Login</button>
     </div>
 </nav>
 
@@ -212,3 +212,167 @@
         </div>
     </div>
 </footer>
+
+
+@* APPLY NOW MODAL *@
+<div class="modal fade" id="ApplyNowModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content p-3">
+            <div class="modal-header flex-column align-items-start p-3 position-relative">
+                <div class="d-flex gap-1 align-items-center mb-1">
+                    <img src="~/images/" alt="">
+                    <h3 class="mb-0">Create your account</h3>
+                </div>
+                <p class="mb-0">Begin your academic journey with our comprehensive scholarship program</p>
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 d-flex gap-3 mb-4">
+
+                <div class="border border-primary rounded-3 w-50">
+                    <div class="text-center p-4">
+                        <img src="~/images/student-icon.svg" alt="" class="mb-1">
+                        <h5 class="mb-2">Freshman</h5>
+                        <p class="mb-0">Document verification required</p>
+                    </div>
+                </div>
+                <div class="border border-success rounded-3 w-50">
+                    <div class="text-center p-4">
+                        <img src="~/images/transferee-icon.svg" alt="" class="mb-3">
+                        <h5 class="mb-2">Transferee</h5>
+                        <p class="mb-0">Document verification required</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0">
+                <p class="text-center w-100 mb-0">
+                    Need help? Contact our admissions office at
+                    <a href="mailto:admission@stateuniv.edu.ph" class="fw-bold text-dark">admission@stateuniv.edu.ph</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@* LOGIN MODAL *@
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-heading p-2 d-flex flex-column align-items-center">
+                <img src="~/images/logo.svg" alt="logo icon" style="width:60px; background: #066B99;" class="rounded-circle p-2">
+                <h4>Philippine State University</h4>
+                <p class="fst-italic">Future starts here.</p>
+            </div>
+            <div class="modal-body" style="padding: 10% 20%; background-color: #066B99;">
+                <form class="d-flex flex-column gap-3 align-items-center ">
+                    <h2 class="text-white">Login</h2>
+                    <div class="d-flex flex-column w-100">
+                        <label for="email" class="text-white">Email</label>
+                        <input type="text" class="form-control w-100">
+                    </div>
+                    <div class="d-flex flex-column w-100">
+                        <label for="studentNumber" class=" text-white">Student Number</label>
+                        <input type="text" class="form-control w-100">
+                    </div>
+                    <div class="d-flex flex-column w-100">
+                        <label for="password" class=" text-white">Password</label>
+                        <input type="password" class="form-control w-100">
+                    </div>
+                </form>
+                <div class="d-flex justify-content-between">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text-white" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#ForgotPasswordModal">Forgot Password</a>
+                </div>
+                <form asp-controller="Dashboard" asp-action="DashboardPage" method="post">
+                    <button type="submit" class="btn btn-light w-100 mt-5">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* FORGOT PASSWORD MODAL *@
+<div class="modal fade" id="ForgotPasswordModal" tabindex="-1" aria-labelledby="ForgotPasswordLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header p-3" style="background-color: #066B99; color: white; position: relative;">
+                <h3 class="modal-title w-100 text-center m-0" id="ForgotPasswordLabel">Forgot Password</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; right: 1rem;"></button>
+            </div>
+            <div class="modal-body text-center p-5">
+                <img src="~/images/ForgotPasswordIcon.svg" alt="icon" class="mb-5">
+                <p class="mb-5">Please enter the email address associated with your account to receive a verification code.</p>
+                <input type="email" class="form-control mb-4 border-secondary" placeholder="Email Address">
+                <button class="btn btn-sm text-white fw-bold w-50 p-2" style="background-color: #066B99;" data-bs-toggle="modal" data-bs-target="#OTPModal">Send Code</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* OTP VERIFICATION MODAL *@
+<div class="modal fade" id="OTPModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header p-3" style="background-color: #066B99; color: white; position: relative;">
+                <h3 class="modal-title w-100 text-center m-0">Verify OTP</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; right: 1rem;"></button>
+            </div>
+            <div class="modal-body text-center p-5">
+                <img src="~/images/OTPIcon.svg" alt="icon" class="mb-5">
+                <p class="mb-4">Please enter the 4-digit code sent to <strong>example@gmail.com</strong></p>
+                <div class="d-flex justify-content-center gap-2 mb-5">
+                    <input type="text" maxlength="1" class="otp-input form-control text-center" />
+                    <input type="text" maxlength="1" class="otp-input form-control text-center" />
+                    <input type="text" maxlength="1" class="otp-input form-control text-center" />
+                    <input type="text" maxlength="1" class="otp-input form-control text-center" />
+                </div>
+                <button class="btn btn-sm text-white fw-bold w-50 p-2" style="background-color: #066B99;" data-bs-toggle="modal" data-bs-target="#CreatePasswordModal">Verify OTP</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* CREATE NEW PASSWORD MODAL *@
+<div class="modal fade" id="CreatePasswordModal" tabindex="-1" aria-labelledby="ForgotPasswordLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header p-3" style="background-color: #066B99; color: white; position: relative;">
+                <h3 class="modal-title w-100 text-center m-0">Create a new password</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; right: 1rem;"></button>
+            </div>
+            <div class="modal-body text-center px-5 py-4">
+                <img src="~/images/OTPIcon.svg" alt="icon" class="mb-3">
+                <p class="mb-3">
+                    Enter a new password to secure your account. Choose a strong password you haven’t used before.
+                </p>
+                <div class="mb-2 text-start">
+                    <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                    <input type="password" id="password" class="form-control border-secondary" required>
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="confirmPassword" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                    <input type="password" id="confirmPassword" class="form-control border-secondary" required>
+                </div>
+                <div class="text-start mb-3">
+                    <small class="text-muted">
+                        Your password must contain the following:
+                        <ul class="small text-muted mb-0">
+                            <li>At least 8 characters long</li>
+                            <li>Must contain one uppercase letter (A–Z)</li>
+                            <li>Must contain one lowercase letter (a–z)</li>
+                            <li>Must contain one number (0–9)</li>
+                            <li>Must contain one special character </li>
+                        </ul>
+                    </small>
+                </div>
+                <button class="btn btn-sm text-white fw-bold w-50" style="background-color: #066B99;" data-bs-dismiss="modal">
+                    Create a new password
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

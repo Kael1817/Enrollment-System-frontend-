@@ -1,0 +1,110 @@
+﻿@{
+}
+<body class="bg-light">
+
+    <div class="d-flex">
+
+        <!-- Sidebar -->
+        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 250px; height: 100vh;">
+            <a href="#" class="d-flex align-items-center mb-3 text-decoration-none">
+                <img src="~/images/logo.svg" alt="Logo" class="me-2 rounded p-2" width="40" style="background-color: #066B99;">
+                <div>
+                    <span class="fs-5 fw-bold text-black">State University</span>
+                    <small class="text-secondary">State University</small>
+                </div>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-black">Home</a>
+                </li>
+                <li><a href="#" class="nav-link text-black">Online Enrollment</a></li>
+                <li><a href="#" class="nav-link text-black">University Library</a></li>
+                <li><a href="#" class="nav-link text-black">Student Portal</a></li>
+                <li><a href="#" class="nav-link text-black">Updates Records</a></li>
+                <li><a href="#" class="nav-link text-black">Settings</a></li>
+            </ul>
+            <hr>
+            <div class="d-flex gap-2">
+                <div>
+                    <img src="~/images/account-icon.svg" alt="Alternate Text" />
+                </div>
+                <div>
+                    <strong>Max de la Cruz</strong>
+                    <a href="#" class="d-block text-black text-decoration-none">Sign out</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-grow-1" style="background: #066B99;">
+
+            <!-- Top Navbar -->
+            <nav class="top-navbar px-4 py-3">
+                <div class="d-flex">
+                    <div class="d-flex gap-2">
+                        <img src="~/images/account-icon.svg" alt="Alternate Text" width="40" />
+                        <div>
+                            <p>Hello, <strong>Max dela Cruz!</strong></p>
+                            <small>Welcome to your dashboard — all services in one place.</small>
+                        </div>
+                    </div>
+                    <div class="ms-auto text-end">
+                        <p>Today is <strong>@DateTime.Now.ToString("MMMM dd, yyyy")</strong></p>
+                        <strong>@DateTime.Now.ToString("h:mm:ss tt")</strong>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Cards Section -->
+            <div class="d-flex justify-content-center align-items-center p-5 gap-5" >
+                <div class="border border-white bg-white rounded-4 p-4 d-flex flex-column align-items-center" style="width: 331px;">
+                    <img src="~/images/logo-blue.svg" alt="Alternate Text" width="60" class="mb-4"/>
+                    <h4 class="fw-semibold p-3">Online Enrollment</h4>
+                    <div class="border border-primary p-3 rounded-3">
+                        <small>
+                            Through the Online Enrollment platform, students are given the opportunity to register for their courses with ease and reliability. The system ensures a smooth and transparent process, eliminating the need for traditional paperwork and in-person 
+                        </small>
+                        <br />
+                        <br />
+                        <small>
+                            Enroll online now and experience a faster, easier, and more convenient way to secure your spot
+                        </small>
+                    </div>
+                    <button class="btn w-50 mt-3 text-white" style="background-color: #066B99;">Go</button>
+                </div>
+                <div class="border border-white bg-white rounded-4 p-4 d-flex flex-column align-items-center" style="width: 331px;">
+                    <img src="~/images/book-open-text.svg" alt="Alternate Text" width="60" class="mb-4"/>
+                    <h4 class="fw-semibold p-3">Online Enrollment</h4>
+                    <div class="border border-success p-3 rounded-3">
+                        <small>
+                            Through the Online Enrollment platform, students are given the opportunity to register for their courses with ease and reliability. The system ensures a smooth and transparent process, eliminating the need for traditional paperwork and in-person 
+                        </small>
+                        <br />
+                        <br />
+                        <small>
+                            Enroll online now and experience a faster, easier, and more convenient way to secure your spot
+                        </small>
+                    </div>
+                    <button class="btn w-50 mt-3 text-white btn-success";">Go</button>
+                </div>
+                <div class="border border-white bg-white rounded-4 p-4 d-flex flex-column align-items-center" style="width: 331px;">
+                    <img src="~/images/user-round-pen.svg" alt="Alternate Text" width="60" class="mb-4"/>
+                    <h4 class="fw-semibold p-3">Online Enrollment</h4>
+                    <div class="p-3 rounded-3" style="border: 1px solid #EE82EE;">
+                        <small>
+                            Through the Online Enrollment platform, students are given the opportunity to register for their courses with ease and reliability. The system ensures a smooth and transparent process, eliminating the need for traditional paperwork and in-person 
+                        </small>
+                        <br />
+                        <br />
+                        <small>
+                            Enroll online now and experience a faster, easier, and more convenient way to secure your spot
+                        </small>
+                    </div>
+                    <button class="btn w-50 mt-3 text-white" style="background-color: #EE82EE;">Go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
