@@ -1,1 +1,214 @@
-﻿<h1>THIS IS THE LANDING PAGE</h1>
+﻿@{
+}
+
+<nav class="d-flex px-5 py-2 gap-5 fixed-top bg-white">
+    <div class="d-flex gap-2">
+        <div class="align-content-center">
+            <img src="~/images/logo.svg" class="rounded p-2" style="background-color:#066B99; width:50px; height:40px;" />
+        </div>
+        <div class="align-items-center">
+            <h5>State University</h5>
+            <small style="color:gray;">State University</small>
+        </div>
+    </div>
+    <div class="d-flex gap-5 align-items-center">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#Programs" class="nav-link">Programs</a>
+    </div>
+    <div class="d-flex align-items-center gap-2 ms-auto">
+        <button class="btn text-white" style="background-color:#066B99; width:150px;">Apply Now</button>
+        <button class="btn text-white" style="background-color:#066B99; width:150px;">Login</button>
+    </div>
+</nav>
+
+<section class="py-4 px-5" style="height: 100vh; background-color:#066B99;">
+    <div style="padding-top: 64px;" class="d-flex">
+        <div class="p-5 d-flex flex-column w-50 h-100 mt-4">
+            <small class="bg-white rounded w-50 text-center p-1 mb-2">Now Accepting Applicants for 2024-2025</small>
+            <div class="mb-3 ">
+                <h1 class="fw-bolder text-white" style="font-size: 60px;">Your Future Starts at</h1>
+                <h1 class="fw-bolder" style="color: #FF9809; font-size: 60px;">Philippine State University</h1>
+            </div>
+            <p class="text-white mb-5">Transform your dreams into reality with completely free education. Get world-class education with no tuition fees for all students.</p>
+            <div>
+                <button class="btn bg-white">Contact Us</button>
+            </div>
+        </div>
+        <div class="p-5 mt-4 w-50 d-flex align-items-center justify-content-center">
+            <div class="rounded-5 p-5 w-75 h-100 border border-white" style="background: #066B96;">
+                <div class="d-flex flex-column h-100">
+                    <h2 class="text-white mb-3">Online Enrollment</h2>
+                    <ul class="text-white d-flex flex-column gap-3 fs-4">
+                        <li>No tuition fee</li>
+                        <li>Fast enrollment process</li>
+                        <li>No hidden fees</li>
+                        <li>Online enrollment available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-3">
+    <div class="d-flex justify-content-around">
+        <div class="text-center">
+            <h1>15,000+</h1>
+            <small>Faculty Members</small>
+        </div>
+        <div class="text-center">
+            <h1>98%</h1>
+            <small>Scholarship Recipient</small>
+        </div>
+        <div class="text-center">
+            <h1>500+</h1>
+            <small>Faculty Members</small>
+        </div>
+        <div class="text-center">
+            <h1>95%</h1>
+            <small>Graduate Employment Rate</small>
+        </div>
+    </div>
+</section>
+
+<section class="px-5 py-3" style="background-color: #066B99; height: 100vh;">
+    <div class="d-flex flex-column px-5 align-items-center h-100">
+        <div class="text-center text-white w-75 my-5">
+            <h1 class="fs-1 mb-2">Why Choose Philippine State University?</h1>
+            <p>We're committed to making quality education accessible to every student through completely free education and comprehensive student support services.</p>
+        </div>
+        <div class="d-flex justify-content-between gap-3 h-50">
+            <div class="border border-white bg-white rounded-4 w-50 h-100">
+                <div class="py-5 px-4 text-center d-flex flex-column gap-3 align-items-center h-100">
+                    <img src="~/images/education-icon.svg" alt="Alternate Text" style="width:100px;" />
+                    <h3>Free Education</h3>
+                    <p>Completely free education with no tuition fees for all students.</p>
+                </div>
+            </div>
+            <div class="border border-white bg-white rounded-4 w-50">
+                <div class="py-5 px-4 text-center d-flex flex-column gap-3 align-items-center h-100">
+                    <img src="~/images/book.svg" alt="Alternate Text" style="width:75px;" />
+                    <h3>Quality Education</h3>
+                    <p>Accredited programs with industry-relevant curriculum and experienced faculty.</p>
+                </div>
+            </div>
+            <div class="border border-white bg-white rounded-4 w-50">
+                <div class="py-5 px-4 text-center d-flex flex-column gap-3 align-items-center h-100">
+                    <img src="~/images/student.svg" alt="Alternate Text" style="width:100px;" />
+                    <h3>Student Support</h3>
+                    <p>Comprehensive support services including counseling, tutoring, and career guidance.</p>
+                </div>
+            </div>
+            <div class="border border-white bg-white rounded-4 w-50">
+                <div class="py-5 px-4 text-center d-flex flex-column gap-3 align-items-center h-100">
+                    <img src="~/images/globe.svg" alt="Alternate Text" style="width:100px;" />
+                    <h3>Career Success</h3>
+                    <p>Strong industry partnerships ensuring excellent job placement for graduates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-5 d-flex flex-column justify-content-center" style="height: 100vh;" id="Programs">
+    <div class="d-flex flex-column align-items-center mt-4">
+        <h1 class="mb-2">Our Academic Program</h1>
+        <p class="mb-5">Discover our wide range of degree programs, all available with full scholarship opportunities for qualified students.</p>
+        <div class="d-flex gap-5 mt-5">
+            <div class="program-card">
+                <div class="px-5 py-4">
+                    <h3 class="mb-5">Bachelor of Science in Information and Technology</h3>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="~/images/clock.svg" alt="Alternate Text" />
+                            <img src="~/images/star.svg" alt="Alternater Text" />
+                        </div>
+                        <div class="d-flex flex-column gap-1">
+                            <p>4 years</p>
+                            <p class="text-success">No Tuition Fee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="px-5 py-4">
+                    <h3 class="mb-5">Bachelor of Early Childhood Education</h3>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="~/images/clock.svg" alt="Alternate Text" />
+                            <img src="~/images/star.svg" alt="Alternate Text" />
+                        </div>
+                        <div class="d-flex flex-column gap-1">
+                            <p>4 years</p>
+                            <p class="text-success">No Tuition Fee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="program-card">
+                <div class="px-5 py-4">
+                    <h3 class="mb-5">Bachelor of Science in Entrepreneurship</h3>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="~/images/clock.svg" alt="Alternate Text" />
+                            <img src="~/images/star.svg" alt="Alternate Text" />
+                        </div>
+                        <div class="d-flex flex-column gap-1">
+                            <p>3 years</p>
+                            <p class="text-success">No Tuition Fee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-white py-4" style="background-color: #066B99;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 mb-4 mb-md-0">
+                <h4 class="fw-bold mb-2">Philippine State University</h4>
+                <p class="mb-3">
+                    Committed to providing excellence in education through innovative programs,
+                    world-class facilities, and comprehensive scholarship opportunities for deserving students.
+                </p>
+                <ul class="list-unstyled mb-3">
+                    <li class="mb-2 d-flex align-items-center">
+                        <img src="images/location.svg" alt="Location" class="me-2" width="20">
+                        <a href="https://maps.google.com/?q=San Bartolome, Novaliches, Quezon City, Philippines"
+                           target="_blank" class="text-white text-decoration-none">
+                            San Bartolome, Novaliches, Quezon City, Philippines
+                        </a>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center">
+                        <img src="images/phone.svg" alt="Phone" class="me-2" width="20">
+                        <a href="tel:09978276531" class="text-white text-decoration-none">
+                            09978276531
+                        </a>
+                    </li>
+                    <li class="mb-2 d-flex align-items-center">
+                        <img src="images/email.svg" alt="Email" class="me-2" width="20">
+                        <a href="mailto:info@psu.edu.ph" class="text-white text-decoration-none">
+                            info@psu.edu.ph
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook" width="15"></a>
+                    <a href="#"><img src="images/x.svg" alt="Twitter/X" width="24"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram" width="24"></a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h4 class="fw-bold">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none d-block py-1">Academic Calendar</a></li>
+                    <li><a href="#" class="text-white text-decoration-none d-block py-1">Student Portal</a></li>
+                    <li><a href="#" class="text-white text-decoration-none d-block py-1">Library</a></li>
+                    <li><a href="#" class="text-white text-decoration-none d-block py-1">Student Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
