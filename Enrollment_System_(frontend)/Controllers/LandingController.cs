@@ -8,5 +8,10 @@ namespace Enrollment_System__frontend_.Controllers
         {
             return View();
         }
+
+        public IActionResult DashboardPage()
+        {
+            return View();
+        }
     }
 }
