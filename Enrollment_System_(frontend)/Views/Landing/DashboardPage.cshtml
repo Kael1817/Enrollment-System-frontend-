@@ -42,7 +42,7 @@
                 <img src="~/images/account-icon.svg" alt="User">
                 <div>
                     <strong>Max de la Cruz</strong>
-                    <a href="#" class="d-block text-black text-decoration-none">Sign out</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#SignOutModal" class="d-block text-black text-decoration-none">Sign out</a>
                 </div>
             </div>
         </aside>
@@ -103,7 +103,7 @@
                 <div class="dashboard-card">
                     <img src="~/images/user-round-pen.svg" alt="Portal" width="50" class="mb-3">
                     <h3 class="mb-2 fw-semibold">Student Portal</h3>
-                    <div class="card-content border" style="border-color:#EE82EE;">
+                    <div class="card-content" style="border: 1px solid #EE82EE;">
                         <small>
                             View your enrollment status, class schedules, grades, and other academic
                             details anytime.
@@ -116,5 +116,23 @@
                 </div>
             </section>
         </main>
+    </div>
+
+    @* SIGN OUT MODAL *@
+    <div class="modal fade" id="SignOutModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered rounded-5">
+            <div class="modal-content p-3">
+                <div class="modal-header d-flex justify-content-center">
+                    <h3 class="modal-title text-center">Ready to Sign Out?</h3>
+                </div>
+                <div class="modal-body text-center px-5">
+                    <p>You are about to sign out of your account. Do you want to continue?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" style="width: 45%;">I'll stay</button>
+                    <a href="@Url.Action("LandingPage", "Landing")" class="btn btn-primary" style="width: 45%;">Logout</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
