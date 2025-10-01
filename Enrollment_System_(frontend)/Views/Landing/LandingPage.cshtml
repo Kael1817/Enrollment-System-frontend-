@@ -229,11 +229,13 @@
             <div class="modal-body p-4 d-flex gap-3 mb-4">
 
                 <div class="border border-primary rounded-3 w-50">
-                    <div class="text-center p-4">
-                        <img src="~/images/student-icon.svg" alt="" class="mb-1">
-                        <h5 class="mb-2">Freshman</h5>
-                        <p class="mb-0">Document verification required</p>
-                    </div>
+                    <a href="@Url.Action("FreshmenForm", "Landing")" class="text-decoration-none text-dark">
+                        <div class="text-center p-4">
+                            <img src="~/images/student-icon.svg" alt="" class="mb-1">
+                            <h5 class="mb-2">Freshman</h5>
+                            <p class="mb-0">Document verification required</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="border border-success rounded-3 w-50">
                     <div class="text-center p-4">

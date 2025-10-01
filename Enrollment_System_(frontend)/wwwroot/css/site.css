@@ -78,3 +78,15 @@ h1,h2,h3,h4,h5,h6, p {
         border-radius: 0.5rem;
         padding: 1rem;
     }
+
+.white-btn {
+    border-radius: 5px;
+    background: var(--Brand-White, #FFF);
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.requirement-card {
+    border-radius: 20px;
+    background: var(--Brand-White, #FFF);
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(0, 0, 0, 0.25);
+}
