@@ -62,6 +62,19 @@ namespace Enrollment_System__frontend_.Controllers
 
 
 
+        public IActionResult StudentInformationPartial()
+        {
+            return PartialView("_StudentInformationPartial");
+        }
+
+        public IActionResult SubjectSchedulesPartial() 
+        {
+            return PartialView("_SubjectSchedulesPartial");
+        }
+        public IActionResult PreviousSubjects() 
+        {
+            return PartialView("_PreviousSubjects");
+        }
 
 
 

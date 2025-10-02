@@ -1,0 +1,191 @@
+﻿<div class="bg-info rounded-4 overflow-hidden">
+    <!-- Header -->
+    <div class="text-center p-4 bg-info border-bottom">
+        <h4 class="fw-bold">Current Enrollment</h4>
+        <p>Enrolled subject and class schedules for this semester.</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="bg-white p-4 d-flex flex-column align-items-start gap-2">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#srfModal" class="btn rounded-4 px-4 py-2 text-white fw-bold" style="background-color: #066B99;">
+            Generate SRF
+        </a>
+        <div class="border border-dark px-3 py-2 rounded-4 fw-bold" style="width: 162px;">
+            Total Units: 23
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white p-4">
+        <table class="table table-bordered align-middle text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Units</th>
+                    <th>Schedule</th>
+                    <th>Instructor</th>
+                    <th>Room</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CC101</td>
+                    <td>Introduction to Computing</td>
+                    <td>3</td>
+                    <td>Mon 7:00 AM - 10:00 AM</td>
+                    <td>Norilyn Sindanum</td>
+                    <td>IK503b</td>
+                    <td><span class="text-warning fw-bold">Waitlisted</span></td>
+                </tr>
+                <tr>
+                    <td>HUM1</td>
+                    <td>Art Appreciation</td>
+                    <td>3</td>
+                    <td>Mon 7:00 AM - 10:00 AM</td>
+                    <td>Edmundo Rubio</td>
+                    <td>IK503b</td>
+                    <td><span class="text-success fw-bold">Enrolled</span></td>
+                </tr>
+                <tr>
+                    <td>MS101</td>
+                    <td>Discrete Mathematics</td>
+                    <td>3</td>
+                    <td>Mon 7:00 AM - 10:00 AM</td>
+                    <td>Lalaine Josefa Carrao</td>
+                    <td>IK503b</td>
+                    <td><span class="text-success fw-bold">Enrolled</span></td>
+                </tr>
+                <tr>
+                    <td>SE101</td>
+                    <td>Software Engineering</td>
+                    <td>3</td>
+                    <td>Mon 7:00 AM - 10:00 AM</td>
+                    <td>Arnel Balasta</td>
+                    <td>IK503b</td>
+                    <td><span class="text-success fw-bold">Enrolled</span></td>
+                </tr>
+                <tr>
+                    <td>PE4</td>
+                    <td>Team Sports</td>
+                    <td>2</td>
+                    <td>Mon 7:00 AM - 10:00 AM</td>
+                    <td>Denver Bermil</td>
+                    <td>IK503b</td>
+                    <td><span class="text-success fw-bold">Enrolled</span></td>
+                </tr>
+                <tr>
+                    <td>SOCSCI3</td>
+                    <td>The Contemporary World</td>
+                    <td>3</td>
+                    <td>Mon 7:00 AM - 10:00 AM</td>
+                    <td>Jackelyn Legaspi</td>
+                    <td>IK503b</td>
+                    <td><span class="text-success fw-bold">Enrolled</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="srfModal" tabindex="-1" aria-labelledby="srfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content rounded-4">
+
+            <!-- Modal Header -->
+            <div class="modal-header border-0">
+                <div class="d-flex gap-2">
+                    <img src="~/images/file-up.svg" alt="Alternate Text" width="50" />
+                    <div>
+                        <h6 class="fw-bold mb-1"><i class="bi bi-file-earmark-lock"></i> Your SRF is ready</h6>
+                        <p class="mb-0 text-muted">Your registration form is ready, make sure to download the file.</p>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <table class="table table-bordered align-middle text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Units</th>
+                            <th>Schedule</th>
+                            <th>Instructor</th>
+                            <th>Room</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CC101</td>
+                            <td>Introduction to Computing</td>
+                            <td>3</td>
+                            <td>Mon 7:00 AM - 10:00 AM</td>
+                            <td>Norilyn Sindanum</td>
+                            <td>IK503b</td>
+                            <td><span class="text-warning fw-bold">Waitlisted</span></td>
+                        </tr>
+                        <tr>
+                            <td>HUM1</td>
+                            <td>Art Appreciation</td>
+                            <td>3</td>
+                            <td>Mon 7:00 AM - 10:00 AM</td>
+                            <td>Ronnie Gatdula</td>
+                            <td>IK503b</td>
+                            <td><span class="text-success fw-bold">Enrolled</span></td>
+                        </tr>
+                        <tr>
+                            <td>MS101</td>
+                            <td>Discrete Mathematics</td>
+                            <td>3</td>
+                            <td>Mon 7:00 AM - 10:00 AM</td>
+                            <td>Lalaine Josefa Carrao</td>
+                            <td>IK503b</td>
+                            <td><span class="text-success fw-bold">Enrolled</span></td>
+                        </tr>
+                        <tr>
+                            <td>SE101</td>
+                            <td>Software Engineering</td>
+                            <td>3</td>
+                            <td>Mon 7:00 AM - 10:00 AM</td>
+                            <td>Arnel Balasta</td>
+                            <td>IK503b</td>
+                            <td><span class="text-success fw-bold">Enrolled</span></td>
+                        </tr>
+                        <tr>
+                            <td>PE4</td>
+                            <td>Team Sports</td>
+                            <td>2</td>
+                            <td>Mon 7:00 AM - 10:00 AM</td>
+                            <td>Denver</td>
+                            <td>IK503b</td>
+                            <td><span class="text-success fw-bold">Enrolled</span></td>
+                        </tr>
+                        <tr>
+                            <td>SOCSCI3</td>
+                            <td>The Contemporary World</td>
+                            <td>3</td>
+                            <td>Mon 7:00 AM - 10:00 AM</td>
+                            <td>Ellyn Deramos, MSIT</td>
+                            <td>IK503b</td>
+                            <td><span class="text-success fw-bold">Enrolled</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer border-0">
+                <button type="button" class="btn text-white px-4" style="background-color: #066B99;">
+                    Download
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

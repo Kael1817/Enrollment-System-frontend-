@@ -100,7 +100,7 @@ function initEnrollmentDropdown() {
 
         dropdown.addEventListener("change", () => loadPartial(dropdown.value));
 
-        // ✅ Default to Regular only the first time
+        //  Default to Regular only the first time
         dropdown.selectedIndex = 1;
         loadPartial(dropdown.value);
 

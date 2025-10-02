@@ -10,15 +10,14 @@
             <div class="d-flex text-center w-100 rounded-5 justify-content-around bg-white px-3 py-2 gap-3 mb-5">
                 <a href="@Url.Action("EnrollmentFormPartial", "Landing")"
                    class="w-25 rounded-5 text-decoration-none fs-5 nav-btn active">Enrollment</a>
-                <a href="#" class="w-25 rounded-5 text-decoration-none fs-5 nav-btn">Student Information</a>
-                <a href="#" class="w-25 rounded-5 text-decoration-none fs-5 nav-btn">Subject & Schedule</a>
-                <a href="#" class="w-25 rounded-5 text-decoration-none fs-5 nav-btn">Previous Subjects</a>
+                <a href="@Url.Action("StudentInformationPartial", "Landing")" 
+                    class="w-25 rounded-5 text-decoration-none fs-5 nav-btn">Student Information</a>
+                <a href="@Url.Action("SubjectSchedulesPartial", "Landing")" 
+                    class="w-25 rounded-5 text-decoration-none fs-5 nav-btn">Subject & Schedule</a>
+                <a href="@Url.Action("PreviousSubjects", "Landing")" 
+                    class="w-25 rounded-5 text-decoration-none fs-5 nav-btn">Previous Subjects</a>
             </div>
-
-            <div class="bg-white rounded-4">
                 <div id="MainContentZone"></div>
-            </div>
-            
         </div>
     </div>
 </body>
