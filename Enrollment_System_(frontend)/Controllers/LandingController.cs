@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Enrollment_System__frontend_.Controllers
 {
@@ -18,6 +19,29 @@ namespace Enrollment_System__frontend_.Controllers
         {
             return View();
         }
+
+        public IActionResult EnrollmentLandingPage()
+        {
+            return View();
+        }
+
+        public IActionResult TransfereeForm()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         [HttpPost] // must be POST
         public async Task<IActionResult> SaveFile(IFormFile file)

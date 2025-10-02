@@ -1,0 +1,151 @@
+﻿<head><link href="~/css/EnrollmentLandingPage.css" rel="stylesheet" /></head>
+<body>
+    <!-- Hero Banner with Background Image -->
+    <section class="hero-banner">
+        <!-- Back Button -->
+        <a href="@Url.Action("DashboardPage","Landing")" class="btn back-button" ><img src="~/images/arrow-left.svg" alt="Alternate Text" width="25"/></a>
+
+        <!-- University Header Inside Hero -->
+        <div class="university-header">
+            <img src="~/images/logo.svg" alt="University Logo" class="university-logo">
+            <div class="university-info">
+                <h2 class="university-name">State University</h2>
+                <p class="university-subtitle">State University</p>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="system-title">ONLINE<br>ENROLLMENT<br>SYSTEM</h1>
+            </div>
+            <div class="hero-right">
+                <p class="hero-tagline">Future starts here.</p>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <img src="~/images/hero-image.svg" alt="Library background" class="hero-background">
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="content-wrapper">
+        
+        <!-- Enroll Now Section -->
+        <section class="enroll-section">
+            <div class="enroll-content">
+                <h2 class="enroll-title">ENROLL NOW!</h2>
+                <p class="enroll-subtitle">Freshmen & Late Officially Open for  University of Academic Year 2025-2026</p>
+                <button class="btn-enroll" onclick="enrollNow()">Enroll Here</button>
+            </div>
+            <div class="enroll-image">
+                <img src="~/images/background-img1.svg" alt="Happy students" class="students-image">
+            </div>
+        </section>
+
+        <!-- Process of Enrollment -->
+        <section class="process-section">
+            <h2 class="section-heading">Process of Enrollment</h2>
+            
+            <p class="process-intro">
+                Each student classification is provided with a dedicated enrollment form to ensure that specific requirements, 
+                status conditions, and Subject procedures are accurately addressed. Enrollment includes:
+            </p>
+
+            <div class="student-types">
+                <p><strong>Regular Students</strong> – students whose course loads (SPH) from the required curriculum sequence 
+                has fit simple academic standing or subject availability.</p>
+                
+                <p><strong>Irregulars</strong> – students whose course loads do not necessarily attended subjects according 
+                to the sequence of the trimester or are currently attending in the university the first time.</p>
+                
+                <p><strong>Returnees</strong> – students who are currently enrolled in the university.</p>
+                
+                <p><strong>Freshmen</strong> – First-time enrollees who are newly admitted to the university.</p>
+            </div>
+
+            <p class="process-note">
+                Although the enrollment know are designed to address the fundamental of classification of students follow 
+                a standardized sequence of steps. This process may vary slightly depending on the nature of specific academic 
+                footwork. the simplicity of all enrollment will remain consistent throughout all courses and programs.
+            </p>
+
+            <p class="enrollment-steps-note">All required Enrollment Steps Varies Including the following</p>
+
+            <!-- Three Steps -->
+            <div class="steps-grid">
+                <div class="step-box">
+                    <div class="step-header">
+                        <span class="step-num">1</span>
+                    </div>
+                    <h3 class="step-title">Submission and<br>Evaluation</h3>
+                    <ul class="step-list">
+                        <li>Submission of enrollment form and academic requirements</li>
+                        <li>Verification of student documents and academic history clearance</li>
+                    </ul>
+                </div>
+
+                <div class="step-box">
+                    <div class="step-header">
+                        <span class="step-num">2</span>
+                    </div>
+                    <h3 class="step-title">Subject and Schedule<br>Assignment</h3>
+                    <ul class="step-list">
+                        <li>Assigning pre-subjects for evaluation</li>
+                        <li>Course information objects from subject worksheets, Subject Load Forms</li>
+                    </ul>
+                </div>
+
+                <div class="step-box">
+                    <div class="step-header">
+                        <span class="step-num">3</span>
+                    </div>
+                    <h3 class="step-title">Confirmation and<br>Release</h3>
+                    <ul class="step-list">
+                        <li>Registration/slot approval if assessment</li>
+                        <li>Release of official registration form Certificate of Enrollment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Services -->
+        <section class="services-section">
+            <h2 class="section-heading">Other Services</h2>
+            <p class="services-intro">
+                Access additional more designed to support your academic journey. From managing your records and monitoring 
+                grades to keeping your personal information up to date, these services ensure centralized and reliable way 
+                to stay informed and organized throughout your studies.
+            </p>
+
+            <!-- Academic Records -->
+            <div class="service-box">
+                <h3 class="service-title">ACADEMIC RECORDS</h3>
+                <p class="service-description">
+                    Easily access and review your academic history. Simply centralize tuition, digital grades, and 
+                    data dashboard and any administrative requirements of new institution here.
+                </p>
+                <button class="btn-service" onclick="goToAcademicRecords()">Go to Previous Subjects</button>
+                <div class="service-image-container">
+                    <img src="~/images/background-img2.svg" alt="Academic Records" class="service-bg-image">
+                </div>
+            </div>
+
+            <!-- Student Info -->
+            <div class="service-box">
+                <h3 class="service-title">STUDENT INFO</h3>
+                <p class="service-description">
+                    View and manage your personal student details in one place. 
+                    From your ID and contact information to your academic status, your profile is always organized and up to date.
+                </p>
+                <button class="btn-service" onclick="goToStudentInfo()">Go to Student Information</button>
+                <div class="service-image-container">
+                    <img src="~/images/background-img3.svg" alt="Academic Records" class="service-bg-image">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
