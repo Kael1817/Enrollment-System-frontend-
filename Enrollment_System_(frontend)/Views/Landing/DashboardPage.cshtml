@@ -12,11 +12,11 @@
             </a>
             <hr>
             <nav class="d-flex flex-column gap-3 mb-auto sidebar">
-                <a href="#" class="sidebar-link">
+                <a href="" class="sidebar-link" >
                     <img src="~/images/home.svg" alt="Home" width="25">
                     <span>Home</span>
                 </a>
-                <a href="#" class="sidebar-link">
+                <a href="@Url.Action("EnrollmentLandingPage", "Landing")" class="sidebar-link">
                     <img src="~/images/logo-black.svg" alt="Enrollment" width="25">
                     <span>Online Enrollment</span>
                 </a>
@@ -85,7 +85,7 @@
                             to secure your spot!
                         </small>
                     </div>
-                    <button class="btn btn-primary w-75 mt-3">Go</button>
+                    <a href="@Url.Action("EnrollmentLandingPage", "Landing")" class="btn btn-primary w-75 mt-3 fw-bold">Go</a>
                 </div>
 
                 <div class="dashboard-card">
@@ -129,8 +129,8 @@
                     <p>You are about to sign out of your account. Do you want to continue?</p>
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
-                    <button class="btn btn-secondary" data-bs-dismiss="modal" style="width: 45%;">I'll stay</button>
-                    <a href="@Url.Action("LandingPage", "Landing")" class="btn btn-primary" style="width: 45%;">Logout</a>
+                    <button class="btn white-btn" data-bs-dismiss="modal" style="width: 45%;">I'll stay</button>
+                    <a href="@Url.Action("LandingPage", "Landing")" class="btn btn-primary " style="width: 45%;">Logout</a>
                 </div>
             </div>
         </div>
