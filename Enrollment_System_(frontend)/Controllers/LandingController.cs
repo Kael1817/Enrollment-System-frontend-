@@ -30,6 +30,36 @@ namespace Enrollment_System__frontend_.Controllers
             return View();
         }
 
+        public IActionResult EnrollmentDashboard()
+        {
+            return View();
+        }
+
+        public IActionResult RegularFormPartial()
+        {
+            return PartialView("_RegularFormPartial");
+        }
+
+        public IActionResult IrregularFormPartial()
+        {
+            return PartialView("_IrregularFormPartial");
+        }
+
+        public IActionResult ReturneeFormPartial()
+        {
+            return PartialView("_ReturneeFormPartial");
+        }
+
+        public IActionResult ShifterFormPartial()
+        {
+            return PartialView("_ShifterFormPartial");
+        }
+
+        public IActionResult EnrollmentFormPartial()
+        {
+            return PartialView("_EnrollmentFormPartial");
+        }
+
 
 
 
