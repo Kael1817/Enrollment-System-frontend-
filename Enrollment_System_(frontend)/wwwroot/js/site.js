@@ -1,13 +1,35 @@
-﻿document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll(".sidebar a");
+﻿document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".sidebar-link");
 
     links.forEach(link => {
-        link.addEventListener("click", function() {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // prevent jumping to top if href="#"
+
+            // Remove active from all
             links.forEach(l => l.classList.remove("active"));
+
+            // Add active to clicked
             this.classList.add("active");
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navBtns = document.querySelectorAll(".nav-btn");
+
+    navBtns.forEach(btn => {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault(); // stops page jump if href="#"
+
+            // Remove active from all
+            navBtns.forEach(b => b.classList.remove("active"));
+
+            // Add active to clicked one
+            this.classList.add("active");
+        });
+    });
+});
+
 
 const dropArea = document.getElementById("drop-area");
 const fileInput = document.getElementById("fileInput");

@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6, p {
         box-shadow: 0 0 5px rgba(0, 102, 153, 0.5);
     }
 
-/* Sidebar */
+/* Sidebar links */
 .sidebar-link {
     display: flex;
     gap: 1rem;
@@ -48,18 +48,42 @@ h1,h2,h3,h4,h5,h6, p {
     border-radius: 0.375rem;
     color: black;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+    /* Hover and active state */
     .sidebar-link:hover,
     .sidebar-link.active {
         background-color: #066B99;
         color: #fff;
     }
 
+        /* If your links have icons/images */
         .sidebar-link.active img,
         .sidebar-link:hover img {
             filter: brightness(0) invert(1);
         }
+
+/* Nav button style */
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    /* Hover and active state */
+    .nav-btn:hover,
+    .nav-btn.active {
+        background-color: #066B99;
+        color: #fff;
+    }
+
+
 
 /* Dashboard cards */
 .dashboard-card {
