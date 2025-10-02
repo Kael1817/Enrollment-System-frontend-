@@ -1,0 +1,19 @@
+﻿<div class="bg-white rounded-4">
+    <div class="px-4 py-4">
+        <h4 class="fw-bold" style="color: #066B99;">Enrollment Form</h4>
+        <p>Fill out the form carefully and ensure that all information provided is accurate before submission.</p>
+        <hr />
+        <h5 class="fw-bold">Type of Enrollment Selection</h5>
+        <p class="mb-1">Select your type of enrollment to view specific requirements</p>
+        <select id="enrollmentType" class="p-2 rounded-2 w-100 mb-5">
+            <option value="">-- Select Enrollment Type --</option>
+            <option value="@Url.Action("RegularFormPartial", "Landing")">Regular</option>
+            <option value="@Url.Action("IrregularFormPartial", "Landing")">Irregular</option>
+            <option value="@Url.Action("ReturneeFormPartial", "Landing")">Returnee</option>
+            <option value="@Url.Action("ShifterFormPartial", "Landing")">Shifter</option>
+        </select>
+
+        <div id="PartialViewZone"></div>
+
+    </div>
+</div>
